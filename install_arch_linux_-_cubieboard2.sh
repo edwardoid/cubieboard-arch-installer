@@ -102,9 +102,7 @@ report_ok_message "Done"
 
 report_info "Writing bootloader to " $dev
 
-dd if=/tmp/arch/boot/sunxi-spl.bin of=/dev/$dev bs=1024 seek=8
-check_prev_cmd_result
-dd if=/tmp/arch/boot/u-boot.bin of=/dev/$dev bs=1024 seek=32
+dd if=/tmp/arch/boot/u-boot-sunxi-with-spl.bin of=/dev/$dev bs=1024 seek=8
 check_prev_cmd_result
 report_ok_message "Done"
 
