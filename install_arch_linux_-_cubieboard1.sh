@@ -132,14 +132,14 @@ report_ok_message "Done"
 ###############################################################################
 
 report_info "Downloading root filesystem"
-wget -c http://archlinuxarm.org/os/ArchLinuxARM-sun4i-latest.tar.gz
+wget -c http://archlinuxarm.org/os/ArchLinuxARM-armv7-latest.tar.gz
 check_prev_cmd_result
 report_ok_message "Done"
 
 ###############################################################################
 
 report_info "Extracting root filesystem. It can take a while... be patient..."
-tar -zxf ArchLinuxARM-sun4i-latest.tar.gz -C /tmp/arch
+tar -zxf ArchLinuxARM-armv7-latest.tar.gz -C /tmp/arch
 report_ok_message "Done"
 
 ###############################################################################
